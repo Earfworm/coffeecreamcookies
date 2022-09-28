@@ -1,0 +1,101 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Bungee", sans-serif;
+  padding: 0 30px 0 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #7944e6;
+}
+
+a:hover {
+  color: #10fdff;
+}
+
+.header-nav .nav-items {
+  /* display: flex; */
+  list-style: none;
+}
+
+.header-nav .nav-items li {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.about-us {
+  background-color: #ff00ff;
+  margin-top: -25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-truck {
+  width: 50%;
+}
+
+p {
+  line-height: 110%;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.product-list li {
+  border: 5px solid #7944e6;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+  background-color: white;
+}
+
+.product-img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-us {
+    flex-direction: row;
+    padding-bottom: 100px;
+  }
+
+  .food-truck .about-container {
+    flex: 1;
+  }
+  .food-truck {
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .product-list {
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 100px;
+  }
+}
